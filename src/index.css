@@ -4,35 +4,119 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 
 html, body {
   font-family: 'Inter', sans-serif;
   margin: 0 !important;
   padding: 0 !important;
+  background: #fefefe;
 }
 
 .container {
   @apply m-auto max-w-screen-xl p-4
 }
 
+.percentage-off{
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 4rem;
+  color: white;
+}
+
+.percentage-sub{
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* .bounce-div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation: bounce 1s infinite;
+} */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set a specific height for the div */
+  overflow: hidden;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+video {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission-img{
+  height: 30rem;
+  width: 100%;
+}
+
+.mission-bg{
+  background-color: #92722f;
+}
+
+.goal-bg{
+  background-color: #2D3748;
+}
+
+.vision-bg{
+  background-color: #807e7e;
+}
+
 .home-banner{
-  /* background-color: #ffffff;
   opacity: 1;
-  background-image:  linear-gradient(30deg, #a3bfac 12%, transparent 12.5%, transparent 87%, #a3bfac 87.5%, #a3bfac), linear-gradient(150deg, #a3bfac 12%, transparent 12.5%, transparent 87%, #a3bfac 87.5%, #a3bfac), linear-gradient(30deg, #a3bfac 12%, transparent 12.5%, transparent 87%, #a3bfac 87.5%, #a3bfac), linear-gradient(150deg, #a3bfac 12%, transparent 12.5%, transparent 87%, #a3bfac 87.5%, #a3bfac), linear-gradient(60deg, #a3bfac77 25%, transparent 25.5%, transparent 75%, #a3bfac77 75%, #a3bfac77), linear-gradient(60deg, #a3bfac77 25%, transparent 25.5%, transparent 75%, #a3bfac77 75%, #a3bfac77);
-  background-size: 80px 140px;
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; */
-  background-color: #ffffff;
-  opacity: 1;
-  background-image:  radial-gradient(#85b18d 1.5px, transparent 1.5px), radial-gradient(#85b18d 1.5px, #ffffff 1.5px);
-  background-size: 60px 60px;
-  background-position: 0 0,30px 30px;
+  background: url('./assets/home_banner.mov');
   height: 100vh;
+}
+
+.mission-header{
+  font-size: 5rem;
+  color: black;
+  text-align: center;
+  line-height: 8rem;
+  font-weight: 500;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.mission-subs{
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  line-height: 2.3rem;
+  font-weight: 400;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Chakra Petch', sans-serif;
+
 }
 
 .home-banner-header{
   font-size: 10rem;
-  /* color: #2D3748; */
-  color: black;
+  color: #fff;
+  /* color: #313131; */
   width: 55rem;
   text-align: center;
   line-height: 8rem;
@@ -110,7 +194,7 @@ div.nav-card {
   width: 70%;
   margin: 100px auto;
   transform: rotate(10deg);
-  background-image: url(https://images.unsplash.com/photo-1623691183627-4d6075a8d0d7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzUwNDk&ixlib=rb-4.0.3&q=80);
+  background-image: url('./assets/main_img.jpeg');
   background-size: cover;
   background-position: right -50px;
   background-color: lightslategray;
@@ -121,9 +205,9 @@ div.nav-card {
   position: relative;
   margin: auto;
   transform: rotate(-5deg);
-  background-image: url(https://images.unsplash.com/photo-1575419268007-a9a5e6b1ce0b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzQ5NjY&ixlib=rb-4.0.3&q=80);
+  background-image: url('./assets/main_img.jpeg');
   background-size: cover;
-  background-position: right -70px;
+  background-position: right -25rem;
   background-color: lightslategray;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 }
@@ -133,9 +217,9 @@ div.nav-card {
   margin: auto;
   transform: rotate(-5deg);
   height: 500px;
-  background-image: url(https://images.unsplash.com/photo-1630534658718-395efda906cb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzUxMDA&ixlib=rb-4.0.3&q=80);
+  background-image: url('./assets/main_img.jpeg');
   background-size: cover;
-  background-position: right -50px;
+  background-position: right -15rem;
   background-color: lightslategray;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 }
@@ -212,4 +296,89 @@ div.nav-card {
   }
 }
 
+.mission-div{
+  background-color: white;
+  box-shadow: 5px 15px 15px -5px rgb(0 0 0 / 44%);
+  padding: 4rem;
+}
 
+.mission-div-video{
+  width: 30rem;
+  height: inherit;
+  border-radius: 1rem;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 44%);
+}
+
+.mission-div-sub{
+  height: 40rem;
+}
+
+.ribbon-wrapper {
+  animation: bounce 1s infinite;
+  border-radius: 0.5rem;
+  display: block;
+  position: relative;
+  padding: 1rem 2rem;
+  background: #000;
+  font-size: 14px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
+}
+
+.ribbon-content {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 89px;
+  height: 91px;
+  overflow: hidden;
+  }
+
+.ribbon {
+  display: inline-block;
+  position: absolute;
+  padding: 7px 0;
+  left: -23px;
+  top: 22px;
+  width: 160px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  background: linear-gradient(to right, #00ff8e 0%,#92722e 100%);
+  color: #fff;
+  text-shadow: 0 2px 2px #090909;
+  letter-spacing: 0.05em;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ribbon::before, .ribbon::after {
+  position: absolute;
+  content: "";
+  border-top: 4px solid #3672b6;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  bottom: -4px;
+}
+
+.ribbon::before {
+  left: 14px;
+}
+
+.ribbon::after {
+  right: 18px;
+}
+
+.white-label{
+  color: #fff;
+}
+
+.gradLine3{
+  width: 50%;
+  margin: 5rem auto 0 auto;
+  display: block;
+  border: none;
+  height: 5px;
+  background: #090909;
+  background: linear-gradient(to right, white, #090909, #bfa671, #92722f, white);
+}
