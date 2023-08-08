@@ -1,3 +1,215 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.container {
+  @apply m-auto max-w-screen-xl p-4
+}
+
+.home-banner{
+  /* background-color: #ffffff;
+  opacity: 1;
+  background-image:  linear-gradient(30deg, #a3bfac 12%, transparent 12.5%, transparent 87%, #a3bfac 87.5%, #a3bfac), linear-gradient(150deg, #a3bfac 12%, transparent 12.5%, transparent 87%, #a3bfac 87.5%, #a3bfac), linear-gradient(30deg, #a3bfac 12%, transparent 12.5%, transparent 87%, #a3bfac 87.5%, #a3bfac), linear-gradient(150deg, #a3bfac 12%, transparent 12.5%, transparent 87%, #a3bfac 87.5%, #a3bfac), linear-gradient(60deg, #a3bfac77 25%, transparent 25.5%, transparent 75%, #a3bfac77 75%, #a3bfac77), linear-gradient(60deg, #a3bfac77 25%, transparent 25.5%, transparent 75%, #a3bfac77 75%, #a3bfac77);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; */
+  background-color: #ffffff;
+  opacity: 1;
+  background-image:  radial-gradient(#85b18d 1.5px, transparent 1.5px), radial-gradient(#85b18d 1.5px, #ffffff 1.5px);
+  background-size: 60px 60px;
+  background-position: 0 0,30px 30px;
+  height: 100vh;
+}
+
+.home-banner-header{
+  font-size: 10rem;
+  /* color: #2D3748; */
+  color: black;
+  width: 55rem;
+  text-align: center;
+  line-height: 8rem;
+  font-weight: 500;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+div.nav-card {
+  box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.60);
+  text-align: center;
+  border-radius: 25px;
+  padding: 8px 10px;
+  background: white;
+}
+
+.social-icons-bg{
+  display: inline-flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.25rem;
+  background: #F9FBFC
+}
+
+.nav-bar-text{
+  font-size: 1.2rem;
+  color: #414A5B;
+  font-weight: 500;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.box-sh{
+  box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.60);
+}
+
+.button-main{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 13.75rem;
+  height: 3.5rem;
+  background: linear-gradient(49deg, #2DDCBD 0%, #00B9C2 100%);
+  border: 2px solid #00B9C2;
+}
+
+.button-text {
+  text-align: center;
+  color: #FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  font-family: 'Chakra Petch', sans-serif;
+  text-transform: uppercase;
+}
+
+.button-text-alt{
+  color: black !important;
+}
+
+.button-main-alt{
+  border: 2px solid black;
+  background: white !important
+}
+
+
+.conbg {
+  width: 100%;
+  height: 500px;
+}
+.bg2 {
+  z-index: 2;
+  position: relative;
+  width: 70%;
+  margin: 100px auto;
+  transform: rotate(10deg);
+  background-image: url(https://images.unsplash.com/photo-1623691183627-4d6075a8d0d7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzUwNDk&ixlib=rb-4.0.3&q=80);
+  background-size: cover;
+  background-position: right -50px;
+  background-color: lightslategray;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+.bg1 {
+  z-index: 3;
+  position: relative;
+  margin: auto;
+  transform: rotate(-5deg);
+  background-image: url(https://images.unsplash.com/photo-1575419268007-a9a5e6b1ce0b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzQ5NjY&ixlib=rb-4.0.3&q=80);
+  background-size: cover;
+  background-position: right -70px;
+  background-color: lightslategray;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+.bg {
+  z-index: 4;
+  position: relative;
+  margin: auto;
+  transform: rotate(-5deg);
+  height: 500px;
+  background-image: url(https://images.unsplash.com/photo-1630534658718-395efda906cb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzUxMDA&ixlib=rb-4.0.3&q=80);
+  background-size: cover;
+  background-position: right -50px;
+  background-color: lightslategray;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.bg-text-header{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.bg-text {
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  color: white;
+  left: 2rem;
+  font-family: 'Chakra Petch', sans-serif;
+
+}
+.bg-text a {
+  margin: 5px;
+  float: right;
+}
+
+#bg1:target .bg {
+  animation: ciut 1s forwards;
+}
+#bg1:target {
+  animation: fre 0.3s forwards;
+}
+#bg2:target .bg1 {
+  animation: ciut 1s forwards;
+}
+#bg2:target {
+  animation: fre1 0.3s forwards;
+}
+#conbg:target .bg2 {
+  animation: ciut1 1s;
+}
+@keyframes fre1 {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fre {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes ciut {
+  0% {
+    opacity: 1;
+    transform: rotate(-5deg) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg) scale(0);
+  }
+}
+@keyframes ciut1 {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(370deg) scale(1);
+  }
+}
+
+
