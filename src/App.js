@@ -53,6 +53,16 @@ function App() {
     });
   }
 
+  const scrollToSection = () => {
+    const targetSection = document.getElementById('targetSection');
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  const scrollToSectionAlt = () => {
+    const targetSectionAlt = document.getElementById('targetSectionAlt');
+    targetSectionAlt.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <>
       <Navbar/>
@@ -70,22 +80,22 @@ function App() {
               Leap Event Center
             </h1>
             <div className='grid grid-cols-2 gap-8'>
-              <button className='button-main'>
+              <a target="_blank" rel="noreferrer" href='https://leapeventscenter.hbportal.co/schedule/63fe5580069c19098fd7e73f' className='button-main cursor-pointer'>
                 <h1 className='button-text'>book a tour</h1>
-              </button>
-              <button className='button-main button-main-alt'>
+              </a>
+              <a target="_blank" rel="noreferrer" href='https://leapeventscenter.hbportal.co/schedule/649139513f8f4526b14afc78' className='button-main button-main-alt cursor-pointer'>
                 <h1 className='button-text button-text-alt'>book a consult</h1>
-              </button>
+              </a>
             </div>
           </div>
           <div className='absolute bottom-12'>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 white-label cursor-pointer">
+            <svg onClick={scrollToSectionAlt} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 white-label cursor-pointer">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
             </svg>
           </div>
         </div>
         <div class="gradLine3"></div>
-        <div className='mb-12'>
+        <div className='mb-12' id="targetSectionAlt">
           <div class="container conbg" id="conbg">
             <div class="bg2" id="bg2">
               <div class="bg1" id="bg1">
@@ -143,8 +153,8 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='container'>
-          <a href='/#' class="ribbon-wrapper mt-8">
+        <div className='container' onClick={scrollToSection}>
+          <div class="ribbon-wrapper mt-8">
             <div class="ribbon-content">
               <span class="ribbon">20% off</span>
               </div>
@@ -156,14 +166,14 @@ function App() {
                   <span className='percentage-sub'> Get 20% Off your event space rental!</span>
                 </div>
               </p>
-          </a>
+          </div>
         </div>
         <div class="contact-h bg-gradient-to-r from-white to-yellow-700 mt-24">
           <div className='container grid grid-cols-1'>
             <div className='flex flex-col'>
               <div className='contact-us-header'>Contact Us!</div>
             </div>
-            <div className='flex flex-col space-y-4 contact-div m-auto'>
+            <div id="targetSection" className='flex flex-col space-y-4 contact-div m-auto'>
               <h1 className='contact-text'>The <i><b>perfect</b></i> space for your event, workshop, meeting, or anything you need!</h1>
               <div className='flex flex-row space-x-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-8">
