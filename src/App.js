@@ -4,8 +4,19 @@ import HomeBannerVid from './assets/home_banner.mp4'
 
 function App() {
   const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+
+  const formatDate = () => {
+    const d = new Date();
+    const day = d.getDate();
+    const month = d.getMonth() + 1;
+    const year = d.getFullYear();
+  
+    const formattedDay = String(day).padStart(2, '0');
+    const formattedMonth = String(month).padStart(2, '0');
+  
+    return `${formattedDay}/${formattedMonth}/${year}`;
+  }
 
   const submitEmail = () => {
     if (email === ""){
@@ -13,12 +24,15 @@ function App() {
       return
     }
 
+    const dt = formatDate()
+
     setIsLoading(true)
     const formData = new URLSearchParams();
     formData.append('Emails', email);
+    formData.append('Date', dt);
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbyrY6Ekx0FTlFk0OXtLhn52l1VCGtXuOlssF0V50dGCjvEqZCXPaoviaRB-jFCn58q6ng/exec",
+      "https://script.google.com/macros/s/AKfycby_byttHKvfwlRiEGae9b_Tr_RRWfiQ_7GjQx8-qmRWEtAy43u491uAOJKumvkSYrbk6A/exec",
       {
         method: "POST",
         body: formData,
@@ -27,14 +41,12 @@ function App() {
         }
       }
     ).then((res) => {
-      console.log(JSON.stringify(res))
       res.json()
-    }).then((data) => {
+    }).then(() => {
       const message = "Your message was successfully submitted!"
       setEmail('')
       setIsLoading(false)
       alert(message)
-      console.log("RESP "+data);
     })
     .catch((error) => {
       console.log("ERR "+error);
