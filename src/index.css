@@ -452,3 +452,77 @@ div.nav-card {
   background: #090909;
   background: linear-gradient(to right, white, #090909, #bfa671, #92722f, white);
 }
+
+.mob-menu-bg{
+  padding: 0.5rem 1rem;
+  border-radius: 6.25rem;
+  background: #FFF;
+  box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.60);
+}
+
+.mob-menu-bg-sub{
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.25rem;
+  background: #F5F8FA;
+}
+
+@media screen and (max-width: 768px) {
+  .home-banner-header{
+    font-size: 4rem;
+    width: auto;
+  }
+
+  .contact-h{
+    height: auto;
+  }
+
+  .contact-div{
+    width: auto;
+    align-items: flex-start;
+  }
+
+  .contact-text{
+    text-align: left;
+  }
+
+  .mission-div-sub{
+    height: 20rem;
+  }
+  
+  .contact-us-header{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .mission-div-video{
+    width: 80%;
+  }
+
+  .mission-header{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .mission-div{
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .mission-div-video{
+    width: 80%;
+  }
+
+  .home-banner-header{
+    width: auto;
+  }
+
+  .contact-div{
+    width: auto;
+  }
+}
