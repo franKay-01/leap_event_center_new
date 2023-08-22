@@ -3,55 +3,6 @@ import Navbar from './components/navbar';
 import HomeBannerVid from './assets/home_banner.mp4'
 
 function App() {
-  const [email, setEmail] = useState('')
-  const [isLoading, setIsLoading] = useState(false)
-
-  const formatDate = () => {
-    const d = new Date();
-    const day = d.getDate();
-    const month = d.getMonth() + 1;
-    const year = d.getFullYear();
-  
-    const formattedDay = String(day).padStart(2, '0');
-    const formattedMonth = String(month).padStart(2, '0');
-  
-    return `${formattedDay}/${formattedMonth}/${year}`;
-  }
-
-  const submitEmail = () => {
-    if (email === ""){
-      alert("Email can not be empty")
-      return
-    }
-
-    const dt = formatDate()
-
-    setIsLoading(true)
-    const formData = new URLSearchParams();
-    formData.append('Emails', email);
-    formData.append('Date', dt);
-
-    fetch(
-      "https://script.google.com/macros/s/AKfycby_byttHKvfwlRiEGae9b_Tr_RRWfiQ_7GjQx8-qmRWEtAy43u491uAOJKumvkSYrbk6A/exec",
-      {
-        method: "POST",
-        body: formData,
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
-        }
-      }
-    ).then((res) => {
-      res.json()
-    }).then(() => {
-      const message = "Your message was successfully submitted!"
-      setEmail('')
-      setIsLoading(false)
-      alert(message)
-    })
-    .catch((error) => {
-      console.log("ERR "+error);
-    });
-  }
 
   const scrollToSection = () => {
     const targetSection = document.getElementById('targetSection');
@@ -95,49 +46,9 @@ function App() {
           </div>
         </div>
         <div class="gradLine3"></div>
-        <div className='hidden lg:flex md:flex mb-12' id="targetSectionAlt">
-          <div class="container conbg" id="conbg">
-            <div class="bg2" id="bg2">
-              <div class="bg1" id="bg1">
-                <div class="bg" id="bg">
-                  <div class="bg-text text-light p-8">
-                    <h3 className='bg-text-header'>Leap Event</h3>
-                    <p>
-                    Providing our clients with<br/>exceptional event spaces
-                    </p>
-                    {/* <a class="text-light" href="#bg1"><svg viewBox="0 0 448 512" width="30" fill="#fff" title="angle-double-right">
-                        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" />
-                      </svg></a> */}
-                  </div>
-                </div>
-                <div class="bg-text text-light p-8">
-                  {/* <h3 className='bg-text-header'>Selamat datang di<br />PutihNET Official</h3>
-                  <p>
-                    Desain Login Page Hotspot<br />
-                    Desain Voucher Wifi<br />
-                    Bisnis Voucher
-                  </p>
-                  <a class="text-light" href="#bg2"><svg viewBox="0 0 448 512" width="30" fill="#fff" title="angle-double-right">
-                      <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" />
-                    </svg></a> */}
-                </div>
-              </div>
-              <div class="bg-text text-light p-8">
-                {/* <h3 className='bg-text-header'>Selamat datang di<br />PutihNET Official</h3>
-                <p>
-                  Desain Login Page Hotspot<br />
-                  Desain Voucher Wifi<br />
-                  Bisnis Voucher
-                </p>
-                <a class="text-light" href="#conbg"><svg viewBox="0 0 448 512" width="30" fill="#fff" title="angle-double-right">
-                    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" />
-                  </svg></a> */}
-              </div>
-            </div>
-          </div>
-        </div>
+        
         <div className='container'>
-          <div className='mission-div grid grid-cols-1 lg:grid-cols-2 mt-12 lg:mt-52 md:mt-52'>
+          <div className='mission-div grid grid-cols-1 lg:grid-cols-2 mt-12 lg:mt-12 md:mt-12'>
             <div className='mission-div-sub'>
               <video autoPlay loop muted className='mission-div-video'>
                 <source src={HomeBannerVid} type="video/mp4"/>
@@ -187,18 +98,16 @@ function App() {
                 </svg>
                 <h1 className='contact-text'>1423 Dual highway Hagerstown Md 21740</h1>
               </div>
-              <input className='email-text-box' onChange={(e) => setEmail(e.target.value)} value={email} type="email" placeholder="Email Address"/>  
-              
-              {isLoading? 
-              <div className="email-button flex flex-row justify-between cursor-pointer">
-                <span className="spinner-position spinner-position-alt">
-                  <div class="w-6 h-6 rounded-full animate-spin
-                    border border-solid border-black border-t-transparent"></div>
-                </span>
+              <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8'>
+                <a target="_blank" rel="noreferrer" 
+                href='https://leapeventscenter.hbportal.co/schedule/63fe5580069c19098fd7e73f' className='button-main button-main-alt-2 cursor-pointer'>
+                  <h1 className='button-text'>book a tour</h1>
+                </a>
+                <a target="_blank" rel="noreferrer" href='https://leapeventscenter.hbportal.co/schedule/649139513f8f4526b14afc78' 
+                className='button-main button-main-alt-1 cursor-pointer'>
+                  <h1 className='button-text button-text-alt'>book a consult</h1>
+                </a>
               </div>
-              :
-              <button onClick={()=>submitEmail()} className='email-button'>Let's Talk!</button>         
-              }
             </div>
           </div>
         </div>
