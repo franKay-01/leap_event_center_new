@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Navbar from './components/navbar';
 import HomeBannerVid from './assets/home_banner.mp4'
+import Logo from './assets/logo.png'
 
 function App() {
 
@@ -84,7 +85,7 @@ function App() {
             <div className='flex flex-col'>
               <div className='contact-us-header'>Contact Us!</div>
             </div>
-            <div id="targetSection" className='flex flex-col space-y-4 contact-div m-auto'>
+            <div id="targetSection" className='flex flex-col space-y-8 contact-div m-auto'>
               <h1 className='contact-text'>The <i><b>perfect</b></i> space for your event, workshop, meeting, or anything you need!</h1>
               
               <div className='flex flex-row space-x-0 lg:space-x-2 md:space-x-2'>
@@ -115,7 +116,11 @@ function App() {
                   <h1 className='button-text button-text-alt'>book a consult</h1>
                 </a>
               </div>
+              <div>
+                <img className="w-12 h-12 lg:w-24 md:w-24 lg:h-24 md:h-24" src={Logo} alt=""/>
+              </div>
             </div>
+           
           </div>
         </div>
       </div>

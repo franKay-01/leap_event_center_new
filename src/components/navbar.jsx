@@ -28,7 +28,7 @@ export default function Navbar() {
                     </a>
                   </div>
                   <div className='mob-menu-bg-sub'>                    
-                    <a href='https://www.instagram.com/leap_eventscenter/' target="_blank" className="brown-button button-margin-left" rel="noreferrer">
+                    <a href='https://www.facebook.com/profile.php?id=100089322853546&mibextid=LQQJ4d/' target="_blank" className="brown-button button-margin-left" rel="noreferrer">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C17.5224 2 22 6.47758 22 12L21.9999 11.9999C21.9999 16.9921 18.3436 21.1293 13.5624 21.879V14.8914H15.8926L15.8925 14.8913L16.3355 12H16.3355L16.3355 11.9999H13.5624V10.1241C13.5624 9.33378 13.9491 8.56175 15.1923 8.56175H16.4537V6.10074C16.4537 6.10074 16.4537 6.10074 16.4537 6.10073V6.10064C16.4537 6.10064 15.3089 5.90517 14.2149 5.90517C12.2233 5.90517 10.8328 6.95856 10.5095 8.89001C10.4621 9.1734 10.4377 9.4757 10.4377 9.79635V12H7.8979V14.8913H7.89795V14.8914H10.4377V21.8791C5.65634 21.1281 2 16.9908 2 12C2 6.47758 6.47758 2 12 2Z" fill="#414A5B"/>
                       </svg>
@@ -37,7 +37,7 @@ export default function Navbar() {
                 </div>
               </div>
 
-              <a className='z-50' href={"/"}>
+              <a className='hidden z-50' href={"/"}>
                 <img className="w-12 h-12 lg:w-24 md:w-24 lg:h-24 md:h-24" src={Logo} alt=""/>
               </a>
               <div className="invisible flex-1 flex items-center sm:items-stretch justify-center z-1">
@@ -56,7 +56,7 @@ export default function Navbar() {
                   </a>
                 </div>
                 <div className="hidden lg:block lg:w-auto md:block md:w-auto">
-                  <a href='https://www.instagram.com/leap_eventscenter/' target="_blank" className="brown-button button-margin-left" rel="noreferrer">
+                  <a href='https://www.facebook.com/profile.php?id=100089322853546&mibextid=LQQJ4d/' target="_blank" className="brown-button button-margin-left" rel="noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C17.5224 2 22 6.47758 22 12L21.9999 11.9999C21.9999 16.9921 18.3436 21.1293 13.5624 21.879V14.8914H15.8926L15.8925 14.8913L16.3355 12H16.3355L16.3355 11.9999H13.5624V10.1241C13.5624 9.33378 13.9491 8.56175 15.1923 8.56175H16.4537V6.10074C16.4537 6.10074 16.4537 6.10074 16.4537 6.10073V6.10064C16.4537 6.10064 15.3089 5.90517 14.2149 5.90517C12.2233 5.90517 10.8328 6.95856 10.5095 8.89001C10.4621 9.1734 10.4377 9.4757 10.4377 9.79635V12H7.8979V14.8913H7.89795V14.8914H10.4377V21.8791C5.65634 21.1281 2 16.9908 2 12C2 6.47758 6.47758 2 12 2Z" fill="#414A5B"/>
                     </svg>
