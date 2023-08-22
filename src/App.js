@@ -79,7 +79,7 @@ function App() {
               </p>
           </div>
         </div>
-        <div class="contact-h bg-gradient-to-r from-white to-yellow-700 mt-24">
+        <div class="contact-h contact-us-gradient mt-24">
           <div className='container grid grid-cols-1'>
             <div className='flex flex-col'>
               <div className='contact-us-header'>Contact Us!</div>
