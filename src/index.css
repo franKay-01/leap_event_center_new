@@ -502,6 +502,7 @@ div.nav-card {
   }
 
   .contact-text{
+    font-size: 1.45rem;
     text-align: left;
   }
 
@@ -510,7 +511,7 @@ div.nav-card {
   }
   
   .contact-us-header{
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 4rem;
   }
 
