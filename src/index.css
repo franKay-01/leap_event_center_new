@@ -192,9 +192,9 @@ video {
   font-size: 10rem;
   color: #fff;
   /* color: #313131; */
-  width: 55rem;
+  width: 60rem;
   text-align: center;
-  line-height: 8rem;
+  line-height: 11rem;
   font-weight: 500;
   font-family: 'Merriweather', serif;
 }
@@ -494,6 +494,7 @@ div.nav-card {
 @media screen and (max-width: 768px) {
   .home-banner-header{
     font-size: 4rem;
+    line-height: 5rem;
     width: auto;
   }
 
@@ -541,6 +542,7 @@ div.nav-card {
 
   .home-banner-header{
     width: auto;
+    line-height: 10rem;
   }
 
   .contact-div{

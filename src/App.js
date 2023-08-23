@@ -29,7 +29,7 @@ function App() {
           <div className='flex flex-col space-y-12 justify-center items-center relative'>
            
             <h1 className='home-banner-header'>
-              Leap Event Center
+              Leap Events Center
             </h1>
             <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8'>
               <a target="_blank" rel="noreferrer" href='https://leapeventscenter.hbportal.co/schedule/63fe5580069c19098fd7e73f' className='button-main cursor-pointer'>
