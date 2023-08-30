@@ -103,9 +103,20 @@ video {
   font-size: 5rem;
   color: #76957e;
   text-align: center;
-  line-height: 8rem;
+  line-height: 5rem;
   font-weight: 500;
   font-family: 'Merriweather', serif;
+}
+
+.package-info{
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  line-height: 2.3rem;
+  font-weight: 100;
+  /* font-family: 'Patua One', cursive; */
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Merriweather', serif; */
 }
 
 .mission-subs{
@@ -166,7 +177,6 @@ video {
   justify-content: center;
   align-items: center;
 }
-
 
 .email-text-box{
   width: 70%;
@@ -265,6 +275,14 @@ div.nav-card {
 .button-main-alt-1{
   border: 2px solid black;
   background: #76957e !important;
+  box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 60%);
+}
+
+.button-main-alt-3{
+  height: 2.5rem !important;
+  margin-bottom: 1rem;
+  background: #fff !important;
+  border: 2px solid #000000 !important;
   box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 60%);
 }
 
@@ -489,6 +507,110 @@ div.nav-card {
   align-items: center;
   border-radius: 6.25rem;
   background: #F5F8FA;
+}
+
+.package-day-desc{
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'ADLaM Display', cursive;
+}
+
+.styled-list {
+  list-style: none;
+  padding: 0;
+}
+
+.styled-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+/* 
+.styled-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  
+} */
+
+.styled-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; /* Set the width of the SVG */
+  height: 16px; /* Set the height of the SVG */
+  background-image: url('./assets/check.svg'); /* URL to your SVG image */
+  background-size: cover; /* Scale the SVG to cover the element */
+}
+
+.package-price{
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'ADLaM Display', cursive;
+}
+
+.package-card-t{
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.chp-card{
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  background: #d7e0da;
+}
+
+.mid-card{
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  background: #b0854c;
+}
+
+.high-card{
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  background: #76957e;
+}
+
+.card-content{
+  margin-top: 2.5rem;
+  padding: 1rem 2rem;
+}
+
+.package-subs{
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  line-height: 1.3rem;
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+}
+
+.package-card{
+  height: fit-content;
+  background: #fff;
+  border-radius: 1rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.587);
+}
+
+.package-card:hover {
+  /* Apply a stronger box shadow and a slight scale transformation */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
 }
 
 @media screen and (max-width: 768px) {
