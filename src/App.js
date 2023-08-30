@@ -82,7 +82,7 @@ function App() {
           </div>
         </div>
         <div className='container flex flex-col justidy-center items-center'>
-          <h1 className='mission-header'>Leap Events Center Event Packages</h1>
+          <h1 className='mission-header mt-4 lg:mt-12 md:mt-12'>Leap Events Center Event Packages</h1>
           <h1 className='package-info mt-4'>
             Please note that prices and availability are subject to change.<br></br>Contact us for detailed information and customization options.
           </h1>
@@ -91,8 +91,36 @@ function App() {
 
         </div>
         <div className='container grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4'>
-
-          <div className='relative package-card'>
+          <div className='relative package-card flex flex-col justify-center items-center'>
+            <div className='absolute top-0 mid-card package-card-t'>
+              Weekday Base
+            </div>
+            <div className='card-content'>
+              <h1 className='package-price'>
+                $600
+              </h1>
+              <h1 className='package-day-desc'>
+                (Monday to Thursday)
+              </h1>
+              <div className='flex flex-row'>
+                <img src={InfoSvg} className="w-4 h-4"/>
+                <h1 className='package-subs'>ALL DEPOSITS ARE NON-REFUNDABLE AND NON-TRANSFERABLE</h1>
+              </div>
+              <ul class="styled-list mt-4">
+                <li>4-hour Venue Rental</li>
+                <li>Tables</li>
+                <li>Free Wi-Fi</li>
+                <li>Surround Sound</li>
+                <li>Kitchenette</li>
+                <li>Set up and break down</li>
+              </ul>              
+            </div>    
+            <a target="_blank" rel="noreferrer" 
+              href='https://www.honeybook.com/widget/leap_events_center_248783/cf_id/63ebc138023d46037ada647f' className='button-main button-main-alt-3 cursor-pointer'>
+              <h1 className='button-text button-text-alt'>get started</h1>
+            </a>         
+          </div>
+          <div className='relative package-card flex flex-col justify-center items-center'>
             <div className='absolute top-0 chp-card package-card-t'>
               Standard
             </div>
@@ -117,26 +145,53 @@ function App() {
                 <li>Kitchenette</li>
                 <li>Set up and break down</li>
               </ul>              
-            </div>
-            
-          </div>
-          <div className='relative package-card'>
-            <div className='absolute top-0 mid-card package-card-t'>
-              Weekday Base
-            </div>
-            <div className='card-content'>
-              <h1>20%</h1>
-            </div>
-            
-          </div>
-          <div className='relative package-card'>
+            </div> 
+            <a target="_blank" rel="noreferrer" 
+              href='https://www.honeybook.com/widget/leap_events_center_248783/cf_id/63ebc138023d46037ada647f' className='button-main button-main-alt-3 cursor-pointer'>
+              <h1 className='button-text button-text-alt'>get started</h1>
+            </a>           
+          </div>         
+          <div className='relative package-card flex flex-col justify-center items-center'>
             <div className='absolute top-0 high-card package-card-t'>
               Premier Party
             </div>
             <div className='card-content'>
-              <h1>20%</h1>
-            </div>
-            
+              <h1 className='package-price'>
+                $2400
+              </h1>
+              <h1 className='package-day-desc'>
+                (Monday to Thursday - $2000)
+              </h1>
+              <div className='flex flex-row'>
+                <img src={InfoSvg} className="w-4 h-4"/>
+                <h1 className='package-subs'>ALL DEPOSITS ARE NON-REFUNDABLE AND NON-TRANSFERABLE</h1>
+              </div>
+              <ul class="styled-list mt-4">
+                <li>4-hour Venue Rental</li>
+                <li>Tables</li>
+                <li>Acrylic Chiavari Chairs</li>
+                <li>Kitchenette</li>
+                <li>3 Serving Tables</li>
+                <li>Cake columns/ Cake stand</li>
+                <li>Choice from Linen Selection</li>
+                <li>Table Charger</li>
+                <li>Plates</li>
+                <li>Utensils</li>
+                <li>Wine Glass</li>
+                <li>Up Lighting</li>
+                <li>Free Parking</li>
+                <li>Wi-Fi Access</li>
+                <li>Table Napkins</li>
+                <li>Set Up and Break Down</li>
+                <li>One Centerpiece per Table</li>
+                <li>Audio Visual Package (Surround Sound/Projector)</li>
+                <li>Set up and break down</li>
+              </ul>              
+            </div> 
+            <a target="_blank" rel="noreferrer" 
+              href='https://www.honeybook.com/widget/leap_events_center_248783/cf_id/63ebc138023d46037ada647f' className='button-main button-main-alt-3 cursor-pointer'>
+              <h1 className='button-text button-text-alt'>get started</h1>
+            </a> 
           </div>
         </div>
         <div class="contact-h contact-us-gradient mt-12 lg:mt-24 md:mt-24">
