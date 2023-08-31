@@ -122,7 +122,7 @@ function App() {
           </div>
           <div className='relative package-card flex flex-col justify-center items-center'>
             <div className='absolute top-0 chp-card package-card-t'>
-              Standard package
+              Standard Package
             </div>
             <div className='card-content'>
               <h1 className='package-price'>
