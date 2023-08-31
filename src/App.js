@@ -167,7 +167,7 @@ function App() {
                 <h1 className='package-subs'>ALL DEPOSITS ARE NON-REFUNDABLE AND NON-TRANSFERABLE</h1>
               </div>
               <ul class="styled-list mt-4">
-                <li>4-hour Venue Rental</li>
+                <li>6-hour Venue Rental</li>
                 <li>Tables</li>
                 <li>Acrylic Chiavari Chairs</li>
                 <li>Kitchenette</li>
