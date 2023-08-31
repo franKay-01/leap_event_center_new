@@ -93,7 +93,7 @@ function App() {
         <div className='container grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4'>
           <div className='relative package-card flex flex-col justify-center items-center'>
             <div className='absolute top-0 mid-card package-card-t'>
-              Weekday Base
+              Base Package
             </div>
             <div className='card-content'>
               <h1 className='package-price'>
@@ -122,7 +122,7 @@ function App() {
           </div>
           <div className='relative package-card flex flex-col justify-center items-center'>
             <div className='absolute top-0 chp-card package-card-t'>
-              Standard
+              Standard package
             </div>
             <div className='card-content'>
               <h1 className='package-price'>
@@ -153,7 +153,7 @@ function App() {
           </div>         
           <div className='relative package-card flex flex-col justify-center items-center'>
             <div className='absolute top-0 high-card package-card-t'>
-              Premier Party
+              Premier Package
             </div>
             <div className='card-content'>
               <h1 className='package-price'>
@@ -206,7 +206,7 @@ function App() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-8 hidden lg:flex md:flex">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
                 </svg>
-                <h1 className='contact-text'>1423 Dual highway Hagerstown Md 21740</h1>
+                <h1 className='contact-text'>1423 Dual Highway Suite18A Hagerstown Md 21740</h1>
               </div>
               <div className='flex flex-row space-x-0 lg:space-x-2 md:space-x-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-8 hidden lg:flex md:flex">
