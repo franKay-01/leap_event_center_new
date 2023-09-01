@@ -88,7 +88,7 @@ function App() {
           </h1>
           
           <h1 className='mission-subs'>A 20% deposit is required</h1>
-
+          <a href='https://youtu.be/a_5mLzPOnBI' className='package-info h-tag mt-4' target="blank">Take a virtual tour of our space!!</a>
         </div>
         <div className='container grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4'>
           <div className='relative package-card flex flex-col justify-center items-center'>
@@ -109,10 +109,11 @@ function App() {
               <ul class="styled-list mt-4">
                 <li>4-hour Venue Rental</li>
                 <li>Tables</li>
+                <li>Chairs</li>
                 <li>Free Wi-Fi</li>
                 <li>Surround Sound</li>
                 <li>Kitchenette</li>
-                <li>Set up and break down</li>
+                <li>Remove setup and breakdown</li>
               </ul>              
             </div>    
             <a target="_blank" rel="noreferrer" 
@@ -138,12 +139,15 @@ function App() {
               <ul class="styled-list mt-4">
                 <li>6-hour Venue Rental</li>
                 <li>Tables</li>
+                <li>Chairs</li>
                 <li>White Folding Chairs</li>
-                <li>Black/White Table Linen</li>
+                <li>Black/White Table Linens</li>
+                <li>3 Serving tables</li>
+                <li>Gift Table</li>
                 <li>Free Wi-Fi</li>
                 <li>Surround Sound</li>
                 <li>Kitchenette</li>
-                <li>Set up and break down</li>
+                <li>Remove setup and breakdown</li>
               </ul>              
             </div> 
             <a target="_blank" rel="noreferrer" 
@@ -182,10 +186,9 @@ function App() {
                 <li>Free Parking</li>
                 <li>Wi-Fi Access</li>
                 <li>Table Napkins</li>
-                <li>Set Up and Break Down</li>
                 <li>One Centerpiece per Table</li>
                 <li>Audio Visual Package (Surround Sound/Projector)</li>
-                <li>Set up and break down</li>
+                <li>Remove setup and breakdown</li>
               </ul>              
             </div> 
             <a target="_blank" rel="noreferrer" 
