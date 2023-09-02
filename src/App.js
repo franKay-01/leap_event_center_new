@@ -113,7 +113,6 @@ function App() {
                 <li>Free Wi-Fi</li>
                 <li>Surround Sound</li>
                 <li>Kitchenette</li>
-                <li>Remove setup and breakdown</li>
               </ul>              
             </div>    
             <a target="_blank" rel="noreferrer" 
@@ -147,7 +146,6 @@ function App() {
                 <li>Free Wi-Fi</li>
                 <li>Surround Sound</li>
                 <li>Kitchenette</li>
-                <li>Remove setup and breakdown</li>
               </ul>              
             </div> 
             <a target="_blank" rel="noreferrer" 
@@ -188,7 +186,6 @@ function App() {
                 <li>Table Napkins</li>
                 <li>One Centerpiece per Table</li>
                 <li>Audio Visual Package (Surround Sound/Projector)</li>
-                <li>Remove setup and breakdown</li>
               </ul>              
             </div> 
             <a target="_blank" rel="noreferrer" 
