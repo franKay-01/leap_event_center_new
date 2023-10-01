@@ -50,7 +50,7 @@ function App() {
         <div class="gradLine3"></div>
         
         <div className='container'>
-          <div className='mission-div grid grid-cols-1 lg:grid-cols-2 mt-12 lg:mt-12 md:mt-12'>
+          <div className='mission-div grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 mt-12 lg:mt-12 md:mt-12'>
             <div className='mission-div-sub'>
               <video autoPlay loop muted className='mission-div-video'>
                 <source src={HomeBannerVid} type="video/mp4"/>
@@ -66,7 +66,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='container' onClick={scrollToSection}>
+        {/* <div className='container' onClick={scrollToSection}>
           <div class="ribbon-wrapper mt-8">
             <div class="ribbon-content">
               <span class="ribbon">20% off</span>
@@ -80,15 +80,16 @@ function App() {
                 </div>
               </p>
           </div>
-        </div>
+        </div> */}
         <div className='container flex flex-col justidy-center items-center'>
-          <h1 className='mission-header mt-4 lg:mt-12 md:mt-12'>Leap Events Center Event Packages</h1>
+          <h1 className='mission-header mt-4 lg:mt-24 md:mt-12'>Leap Events Center Event Packages</h1>
           <h1 className='package-info mt-4'>
             Please note that prices and availability are subject to change.<br></br>Contact us for detailed information and customization options.
           </h1>
           
           <h1 className='mission-subs'>A 20% deposit is required</h1>
           <a href='https://youtu.be/a_5mLzPOnBI' className='package-info h-tag mt-4' target="blank">Take a virtual tour of our space!!</a>
+   
         </div>
         <div className='container grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4'>
           <div className='relative package-card flex flex-col justify-center items-center'>
@@ -97,11 +98,13 @@ function App() {
             </div>
             <div className='card-content'>
               <h1 className='package-price'>
-                $600
+                $599
               </h1>
               <h1 className='package-day-desc'>
                 (Monday to Thursday)
               </h1>
+              <h1 className='package-subs mb-4 underline'>Taxes are not included in pricing.</h1>
+
               <div className='flex flex-row'>
                 <img src={InfoSvg} className="w-4 h-4"/>
                 <h1 className='package-subs'>ALL DEPOSITS ARE NON-REFUNDABLE AND NON-TRANSFERABLE</h1>
@@ -129,8 +132,10 @@ function App() {
                 $1000
               </h1>
               <h1 className='package-day-desc'>
-                (Monday to Thursday - $800)
+                (Monday to Thursday - $799)
               </h1>
+              <h1 className='package-subs mb-4 underline'>Taxes are not included in pricing.</h1>
+
               <div className='flex flex-row'>
                 <img src={InfoSvg} className="w-4 h-4"/>
                 <h1 className='package-subs'>ALL DEPOSITS ARE NON-REFUNDABLE AND NON-TRANSFERABLE</h1>
@@ -162,8 +167,10 @@ function App() {
                 $2400
               </h1>
               <h1 className='package-day-desc'>
-                (Monday to Thursday - $2000)
+                (Monday to Thursday - $1999)
               </h1>
+              <h1 className='package-subs mb-4 underline'>Taxes are not included in pricing.</h1>
+
               <div className='flex flex-row'>
                 <img src={InfoSvg} className="w-4 h-4"/>
                 <h1 className='package-subs'>ALL DEPOSITS ARE NON-REFUNDABLE AND NON-TRANSFERABLE</h1>
