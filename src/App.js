@@ -33,7 +33,7 @@ function App() {
               Leap Events Center
             </h1>
             <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8'>
-              <a target="_blank" rel="noreferrer" href='https://leapeventscenter.hbportal.co/schedule/63fe5580069c19098fd7e73f' className='button-main cursor-pointer'>
+              <a target="_blank" rel="noreferrer" href='https://leapeventscenter.hbportal.co/schedule/64ee29bef7b5c800e3194055' className='button-main cursor-pointer'>
                 <h1 className='button-text'>book a tour</h1>
               </a>
               <a target="_blank" rel="noreferrer" href='https://leapeventscenter.hbportal.co/schedule/649139513f8f4526b14afc78' className='button-main button-main-alt cursor-pointer'>
@@ -101,7 +101,7 @@ function App() {
                 $599
               </h1>
               <h1 className='package-day-desc'>
-                (Monday to Thursday)
+                (Available any day of the week)
               </h1>
               <h1 className='package-subs mb-4 underline'>Taxes are not included in pricing.</h1>
 
@@ -229,7 +229,7 @@ function App() {
               </div>
               <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8'>
                 <a target="_blank" rel="noreferrer" 
-                href='https://leapeventscenter.hbportal.co/schedule/63fe5580069c19098fd7e73f' className='button-main button-main-alt-2 cursor-pointer'>
+                href='https://leapeventscenter.hbportal.co/schedule/64ee29bef7b5c800e3194055' className='button-main button-main-alt-2 cursor-pointer'>
                   <h1 className='button-text'>book a tour</h1>
                 </a>
                 <a target="_blank" rel="noreferrer" href='https://leapeventscenter.hbportal.co/schedule/649139513f8f4526b14afc78' 
