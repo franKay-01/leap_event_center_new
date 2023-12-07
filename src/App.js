@@ -119,7 +119,7 @@ function App() {
               </ul>              
             </div>    
             <a target="_blank" rel="noreferrer" 
-              href='https://www.honeybook.com/widget/leap_events_center_248783/cf_id/63ebc138023d46037ada647f' className='button-main button-main-alt-3 cursor-pointer'>
+              href='https://leapeventscenter.hbportal.co/public/64e962356523550024412a4a' className='button-main button-main-alt-3 cursor-pointer'>
               <h1 className='button-text button-text-alt'>get started</h1>
             </a>         
           </div>
@@ -154,7 +154,7 @@ function App() {
               </ul>              
             </div> 
             <a target="_blank" rel="noreferrer" 
-              href='https://www.honeybook.com/widget/leap_events_center_248783/cf_id/63ebc138023d46037ada647f' className='button-main button-main-alt-3 cursor-pointer'>
+              href='https://leapeventscenter.hbportal.co/public/64de19b76c86330025436a01' className='button-main button-main-alt-3 cursor-pointer'>
               <h1 className='button-text button-text-alt'>get started</h1>
             </a>           
           </div>         
@@ -196,7 +196,7 @@ function App() {
               </ul>              
             </div> 
             <a target="_blank" rel="noreferrer" 
-              href='https://www.honeybook.com/widget/leap_events_center_248783/cf_id/63ebc138023d46037ada647f' className='button-main button-main-alt-3 cursor-pointer'>
+              href='https://leapeventscenter.hbportal.co/public/64e9629c625ff80024904751' className='button-main button-main-alt-3 cursor-pointer'>
               <h1 className='button-text button-text-alt'>get started</h1>
             </a> 
           </div>
